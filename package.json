@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cleanup": "rimraf ./dist",
+    "server": "webpack-dev-server --config ./webpack.dev.js",
+    "dev": "npm run cleanup && webpack --config ./webpack.dev.js && npm run server",
+    "build": "npm run cleanup && webpack --config ./webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -14,6 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "css-minimizer-webpack-plugin": "^4.2.2",
+    "css-wipe": "^4.3.0",
     "eslint-webpack-plugin": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",
@@ -33,6 +37,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.6.0",
     "html-loader": "^4.2.0",
+    "postcss-loader": "^7.0.2",
     "prettier": "^2.8.4",
     "rimraf": "^4.1.2",
     "stylelint": "^15.2.0",

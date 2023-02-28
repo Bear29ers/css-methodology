@@ -14,7 +14,7 @@ module.exports = () =>
       open: true,
       static: path.join(__dirname, 'dist'),
       host: '0.0.0.0',
-      port: 5000,
+      port: 5001,
       hot: true,
       client: {
         overlay: {

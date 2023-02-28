@@ -5,7 +5,7 @@ const StylelintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = ({ outputFile, assetFile }) => ({
   entry: {
-    index: './src/js/index.js',
+    index: './src/index.js',
   },
   output: {
     path: path.join(__dirname, 'dist'),
