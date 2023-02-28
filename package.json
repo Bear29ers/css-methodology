@@ -23,7 +23,8 @@
     "mini-css-extract-plugin": "^2.7.2",
     "stylelint-webpack-plugin": "^4.1.0",
     "webpack": "^5.75.0",
-    "webpack-merge": "^5.8.0"
+    "webpack-merge": "^5.8.0",
+    "webpack-watched-glob-entries-plugin": "^2.2.6"
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",

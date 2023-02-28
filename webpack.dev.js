@@ -1,5 +1,4 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { merge } = require('webpack-merge');
 const commonConf = require('./webpack.common');
 
@@ -12,7 +11,7 @@ module.exports = () =>
     devtool: 'source-map',
     devServer: {
       open: true,
-      static: path.join(__dirname, 'dist'),
+      static: path.join(__dirname, 'dist/html'),
       host: '0.0.0.0',
       port: 5001,
       hot: true,
@@ -31,11 +30,5 @@ module.exports = () =>
       ignored: /node_modules/,
       poll: 1000,
     },
-    plugins: [
-      new HtmlWebpackPlugin({
-        template: 'src/index.html',
-        inject: 'body',
-        filename: path.resolve(__dirname, 'dist/[name].html'),
-      }),
-    ],
+    plugins: [],
   });
