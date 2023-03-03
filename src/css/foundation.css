@@ -19,34 +19,34 @@ body {
 
 /* モジュール
 * ================================== */
-.bl_module {
+.bl_media {
   display: flex;
   align-items: center;
   font-size: 16px;
   line-height: 1.5;
 }
 
-.bl_module_imageWrapper {
+.bl_media_imageWrapper {
   flex: 1 1 25%;
   margin-right: 3.3333%;
 }
 
-.bl_module_imageWrapper img {
+.bl_media_imageWrapper img {
   width: 100%;
   vertical-align: top;
 }
 
-.bl_module_body {
+.bl_media_body {
   flex: 1 1 68.3333%;
 }
 
-.bl_module_title {
+.bl_media_title {
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: bold;
 }
 
-.bl_module_body > span {
+.bl_media_body > span {
   font-size: 14px;
   color: #555;
 }
