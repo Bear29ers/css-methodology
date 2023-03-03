@@ -26,34 +26,34 @@ body {
   line-height: 1.5;
 }
 
-.bl_module .image-wrapper {
+.bl_module_imageWrapper {
   flex: 1 1 25%;
   margin-right: 3.3333%;
 }
 
-.bl_module .image-wrapper img {
+.bl_module_imageWrapper img {
   width: 100%;
   vertical-align: top;
 }
 
-.bl_module .body {
+.bl_module_body {
   flex: 1 1 68.3333%;
 }
 
-.bl_module .title {
+.bl_module_title {
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: bold;
 }
 
-.bl_module .sub-title {
+.bl_module_body > span {
+  font-size: 14px;
+  color: #555;
+}
+
+.subTitle {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 16px;
   border-bottom: 1px solid #555;
-}
-
-.bl_module .body > span {
-  font-size: 14px;
-  color: #555;
 }
