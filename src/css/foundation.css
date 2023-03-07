@@ -10,6 +10,9 @@ body {
 /* レイアウト
 * ================================== */
 .ly_cont {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
   max-width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
@@ -56,4 +59,24 @@ body {
   margin-bottom: 10px;
   font-size: 16px;
   border-bottom: 1px solid #555;
+}
+
+/* モディファイア
+* ================================== */
+.bl_media_rev {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.bl_media_rev .bl_media_imageWrapper {
+  margin-right: 0;
+}
+
+.bl_media_rev .bl_media_body {
+  margin-right: 3.3333%;
+}
+
+.bl_media_imageWrapper_bordered {
+  padding: 2px;
+  border: 1px solid #aaa;
 }
