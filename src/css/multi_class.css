@@ -1,0 +1,33 @@
+@import url("css-wipe");
+
+.el_btn {
+  display: inline-block;
+  width: 300px;
+  max-width: 100%;
+  padding: 20px 10px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #e25c00;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+  transition: 0.25s;
+}
+
+.hp_warning {
+  color: #222;
+  background-color: #f1de00;
+}
+
+.hp_bxshNone {
+  box-shadow: none;
+}
+
+.hp_textBlack {
+  color: #222;
+}
+
+.hp_textWhite {
+  color: #fff;
+}

@@ -1,0 +1,71 @@
+@import url("css-wipe");
+
+/*
+シングルクラス設計のデメリット
+・CSS側の多くのコードが重複し、バリエーションの数が増えれば増えるほどCSSが肥大化してしまうデメリットがある。
+・モジュール拡張に対する柔軟性の低さがシングルクラス設計の真の弱点
+*/
+
+.el_btnTheme,
+.el_btnWarning,
+.el_btnThemeShadowNone,
+.el_btnThemeTextBlack,
+.el_btnThemeShadowNoneTextBlack,
+.el_btnWarningShadowNone,
+.el_btnWarningTextWhite,
+.el_btnWarningShadowNoneTextWhite {
+  display: inline-block;
+  width: 300px;
+  max-width: 100%;
+  padding: 20px 10px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+  transition: 0.25s;
+}
+
+.el_btnTheme,
+.el_btnThemeShadowNone,
+.el_btnThemeTextBlack,
+.el_btnThemeShadowNoneTextBlack {
+  color: #fff;
+  background-color: #e25c00;
+}
+
+.el_btnThemeShadowNone {
+  box-shadow: none;
+}
+
+.el_btnThemeTextBlack {
+  color: #222;
+}
+
+.el_btnThemeShadowNoneTextBlack {
+  color: #222;
+  box-shadow: none;
+}
+
+.el_btnWarning,
+.el_btnWarningShadowNone,
+.el_btnWarningTextWhite,
+.el_btnWarningShadowNoneTextWhite {
+  color: #222;
+  background-color: #f1de00;
+}
+
+.el_btnWarningShadowNone {
+  box-shadow: none;
+}
+
+.el_btnWarningTextWhite {
+  color: #fff;
+}
+
+.el_btnWarningShadowNoneTextWhite {
+  color: #fff;
+  box-shadow: none;
+}
+
+/* シングルクラス設計を行う際にはSassのMixinやExtendの機能を用いると、効率よく開発を進めることができる */

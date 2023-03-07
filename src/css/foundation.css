@@ -1,3 +1,82 @@
+@import url("css-wipe");
+
+/* ベース
+* ================================== */
+
 body {
-  background-color: skyblue;
+  font-family: sans-serif;
+}
+
+/* レイアウト
+* ================================== */
+.ly_cont {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  max-width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* モジュール
+* ================================== */
+.bl_media {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.bl_media_imageWrapper {
+  flex: 1 1 25%;
+  margin-right: 3.3333%;
+}
+
+.bl_media_imageWrapper img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.bl_media_body {
+  flex: 1 1 68.3333%;
+}
+
+.bl_media_title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.bl_media_body > span {
+  font-size: 14px;
+  color: #555;
+}
+
+.subTitle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #555;
+}
+
+/* モディファイア
+* ================================== */
+.bl_media_rev {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.bl_media_rev .bl_media_imageWrapper {
+  margin-right: 0;
+}
+
+.bl_media_rev .bl_media_body {
+  margin-right: 3.3333%;
+}
+
+.bl_media_imageWrapper_bordered {
+  padding: 2px;
+  border: 1px solid #aaa;
 }
